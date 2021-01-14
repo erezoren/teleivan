@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
+  "name": "teleivan",
   "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "description": "The Telegram version of Ivan",
   "engines": {
     "node": "12.x"
   },
