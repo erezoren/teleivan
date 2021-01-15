@@ -50,7 +50,7 @@ bot.command('stock', (ctx) => {
 })
 
 
-const regex = new RegExp(/נעם*/)
+const regex = new RegExp(/נועם*|נעם*/)
 bot.hears(regex, (ctx) => {
   ctx.reply('בדיוק גם אני חשבתי על נעם....איזה קטע! 😻😻😻')
 });
