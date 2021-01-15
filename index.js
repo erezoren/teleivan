@@ -3,7 +3,7 @@ const { Telegraf } = require('telegraf')
 let bot
 if (process.env.NODE_ENV === 'production') {
   bot = new Telegraf(process.env.BOT_TOKEN);
-  bot.telegram.setWebHook(process.env.HEROKU_URL + bot.token);
+  bot.startWebhook(process.env.HEROKU_URL + bot.token);
 } else {
   bot = new Telegraf(process.env.BOT_TOKEN);
 }
