@@ -93,6 +93,6 @@ cron.schedule('* * * * *', async () => {
     console.info("Done refreshing application")
   })
   .catch(error => {
-    console.error("Failed in refreshing application")
+    console.error("Failed in refreshing application "+error)
   });
 });
