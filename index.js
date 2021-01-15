@@ -1,6 +1,7 @@
 require('dotenv').config();
 const {Telegraf} = require('telegraf');
 const axios = require('axios');
+const cron = require('node-cron')
 let bot
 if (process.env.NODE_ENV === 'production') {
   bot = new Telegraf(process.env.BOT_TOKEN);
@@ -49,7 +50,6 @@ bot.command('stock', (ctx) => {
   });
 })
 
-
 const regex = new RegExp(/נועם*|נעם*/)
 bot.hears(regex, (ctx) => {
   ctx.reply('בדיוק גם אני חשבתי על נעם....איזה קטע! 😻😻😻')
@@ -82,4 +82,17 @@ app.listen(process.env.PORT);
 app.post('/' + bot.token, (req, res) => {
   bot.processUpdate(req.body);
   res.sendStatus(200);
+});
+
+cron.schedule('* * * * *', async () => {
+  console.log('Refreshing application');
+  axios
+  .get(
+      `https://teleivan.herokuapp.com/`)
+  .then(response => {
+    console.info("Done refreshing application")
+  })
+  .catch(error => {
+    console.error("Failed in refreshing application")
+  });
 });
