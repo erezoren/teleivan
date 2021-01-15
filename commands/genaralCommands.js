@@ -1,6 +1,8 @@
 function bindCommands(bot) {
   bot.on('sticker', (ctx) => {
-    ctx.reply('👍')
+    //ctx.reply('👍')
+    ctx.reply('😀')
+
   })
   bot.hears('thanks', (ctx) => ctx.reply('Your\'e more then welcome!'))
   bot.hears('תודה', (ctx) => ctx.reply('אין על מה!!!'))
