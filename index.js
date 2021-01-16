@@ -5,13 +5,15 @@ const cron = require('node-cron');
 const generalCommands = require('./commands/genaralCommands')
 const personalCommands = require('./commands/personalCommands')
 const externalApiCommands = require('./commands/externalApiCommands')
+const reminders = require('./commands/reminders')
+
 
 let bot
 if (process.env.NODE_ENV === 'production') {
   bot = new Telegraf(process.env.BOT_TOKEN);
   bot.startWebhook(process.env.HEROKU_URL + bot.token);
 } else {
-  bot = new Telegraf(process.env.BOT_TOKEN);
+  bot = new Telegraf(process.env.TEST_BOT_TOKEN);
 }
 
 bot.use(async (ctx, next) => {
@@ -31,6 +33,7 @@ bot.start((ctx) => {
 generalCommands.bindCommands(bot);
 externalApiCommands.bindCommands(bot);
 personalCommands.bindCommands(bot);
+reminders.bindCommands(bot);
 
 bot.launch()
 
