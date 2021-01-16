@@ -1,7 +1,7 @@
 function bindCommands(bot) {
   bot.on('sticker', (ctx) => {
     //ctx.reply('👍')
-    //console.log('Response is '+JSON.stringify(ctx))
+    console.log('Response is '+JSON.stringify(ctx))
     ctx.reply('😀')
 
   })
