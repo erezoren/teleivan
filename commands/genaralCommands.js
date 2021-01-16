@@ -1,7 +1,7 @@
 function bindCommands(bot) {
   bot.on('sticker', (ctx) => {
     //ctx.reply('👍')
-    console.log('Response is '+JSON.stringify(ctx))
+    console.log('CAHT_TITLE=' + ctx.chat.title + ', CHAT ID = ' + ctx.chat.id)
     ctx.reply('😀')
 
   })

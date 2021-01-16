@@ -4,7 +4,7 @@ require('dotenv').config();
 
 function bindCommands(bot) {
   cron.schedule('0 30 9 * * SUN,TUE,THU', async () => {
-    bot.telegram.sendMessage(-466677636, 'יששששש!!!! עוד מעט דיילי!!! 😛')
+    bot.telegram.sendMessage(process.env.UMSING_CHAT_ID, 'יששששש!!!! עוד מעט דיילי!!! 😛')
 
   }, {
     scheduled: true,
@@ -12,7 +12,7 @@ function bindCommands(bot) {
   });
 
   cron.schedule('0 30 10 * * MON,WED', async () => {
-    bot.telegram.sendMessage(-466677636, 'יששששש!!!! עוד מעט דיילי!!! 😛')
+    bot.telegram.sendMessage(process.env.UMSING_CHAT_ID, 'יששששש!!!! עוד מעט דיילי!!! 😛')
 
   }, {
     scheduled: true,
@@ -30,7 +30,7 @@ function bindCommands(bot) {
         const itemDate = Date.parse(item.date);
         if (isSameDay(new Date(itemDate), new Date())) {
           const message=`היום ${item.hebrew}`
-          bot.telegram.sendMessage(-466677636, message)
+          bot.telegram.sendMessage(process.env.UMSING_CHAT_ID, message)
         }
       })
     })
