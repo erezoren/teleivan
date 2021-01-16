@@ -8,7 +8,7 @@ function bindCommands(bot) {
     .then(response => {
       const stockData = response.data[0];
       let trend;
-      if (stockData.regularMarketChange = 0) {
+      if (stockData.regularMarketChangePercent >= 0) {
         trend = '😜'
       }
       else {
