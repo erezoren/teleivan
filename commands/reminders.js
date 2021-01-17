@@ -4,7 +4,8 @@ require('dotenv').config();
 
 function bindCommands(bot) {
   cron.schedule('0 30 9 * * SUN,TUE,THU', async () => {
-    bot.telegram.sendMessage(process.env.UMSING_CHAT_ID, 'יששששש!!!! עוד מעט דיילי!!! 😛')
+    bot.telegram.sendMessage(getChatId(),
+        'יששששש!!!! עוד מעט דיילי!!! 😛')
 
   }, {
     scheduled: true,
@@ -12,7 +13,8 @@ function bindCommands(bot) {
   });
 
   cron.schedule('0 30 10 * * MON,WED', async () => {
-    bot.telegram.sendMessage(process.env.UMSING_CHAT_ID, 'יששששש!!!! עוד מעט דיילי!!! 😛')
+    bot.telegram.sendMessage(getChatId(),
+        'יששששש!!!! עוד מעט דיילי!!! 😛')
 
   }, {
     scheduled: true,
@@ -29,8 +31,8 @@ function bindCommands(bot) {
       calData.items.map(item => {
         const itemDate = Date.parse(item.date);
         if (isSameDay(new Date(itemDate), new Date())) {
-          const message=`היום ${item.hebrew}`
-          bot.telegram.sendMessage(process.env.UMSING_CHAT_ID, message)
+          const message = `היום ${item.hebrew}`
+          bot.telegram.sendMessage(getChatId(), message)
         }
       })
     })
@@ -42,6 +44,16 @@ function bindCommands(bot) {
     scheduled: true,
     timezone: "Asia/Jerusalem"
   });
+
+}
+
+function getChatId() {
+  if (process.env.NODE_ENV === 'production') {
+    return process.env.UMSING_CHAT_ID;
+  }
+  else {
+    return process.env.TEST_CHAT_ID;
+  }
 
 }
 
