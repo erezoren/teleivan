@@ -20,8 +20,24 @@ function bindCommands(bot) {
       ctx.telegram.sendMessage(ctx.message.chat.id, 'error ' + error)
     });
   })
+
+  bot.command('chuck', (ctx) => {
+    axios
+    .get(
+        `https://api.chucknorris.io/jokes/random`)
+    .then(response => {
+      const data = response.data;
+      ctx.telegram.sendMessage(ctx.message.chat.id, data.value)
+    })
+    .catch(error => {
+      ctx.telegram.sendMessage(ctx.message.chat.id, 'error ' + error)
+    });
+  })
 }
 
-module.exports={
-  bindCommands:bindCommands
+module.exports = {
+  bindCommands: bindCommands
 }
+
+
+
