@@ -6,7 +6,7 @@ const generalCommands = require('./commands/genaralCommands')
 const personalCommands = require('./commands/personalCommands')
 const externalApiCommands = require('./commands/externalApiCommands')
 const reminders = require('./commands/reminders')
-
+const chat = require('./commands/chat/chatCommands')
 
 let bot
 if (process.env.NODE_ENV === 'production') {
@@ -34,7 +34,7 @@ generalCommands.bindCommands(bot);
 externalApiCommands.bindCommands(bot);
 personalCommands.bindCommands(bot);
 reminders.bindCommands(bot);
-
+chat.bindCommands(bot);
 bot.launch()
 
 // Enable graceful stop

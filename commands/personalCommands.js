@@ -11,6 +11,6 @@ function bindCommands(bot) {
   });
 }
 
-module.exports={
-  bindCommands:bindCommands
+module.exports = {
+  bindCommands: bindCommands
 }

@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f348d44a-7c02-4606-bdfc-2b5aea6c44ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/chat/chatCommands.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/chat/train-nlp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repo/repoClient.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/personalCommands.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/personalCommands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,43 +69,51 @@
     <session id="1078945362">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.9" value="4" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="db" value="3" />
           <entry key="doc" value="1" />
           <entry key="env" value="2" />
           <entry key="gitignore" value="1" />
-          <entry key="js" value="4" />
+          <entry key="js" value="15" />
+          <entry key="json" value="1" />
+          <entry key="nlp" value="2" />
+          <entry key="npmrc" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="2" />
           <entry key="Git file" value="1" />
-          <entry key="JavaScript" value="4" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="15" />
+          <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="73" />
-          <entry key="js" value="554" />
-          <entry key="txt" value="93" />
+          <entry key="js" value="967" />
+          <entry key="json" value="2" />
+          <entry key="txt" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="73" />
-          <entry key="JavaScript" value="554" />
-          <entry key="PLAIN_TEXT" value="93" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="967" />
+          <entry key="PLAIN_TEXT" value="108" />
         </counts>
       </usages-collector>
     </session>
@@ -112,44 +126,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="44" selection-start-line="11" selection-end-line="11" selection-end-column="44" />
+            <state relative-caret-position="199">
+              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commands/reminders.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commands/externalApiCommands.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="35" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/commands/personalCommands.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+            <state relative-caret-position="30">
+              <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -157,45 +144,73 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commands/genaralCommands.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="105">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/commands/externalApiCommands.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+        <entry file="file://$PROJECT_DIR$/commands/chat/train-nlp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4485">
-              <caret line="299" column="14" selection-start-line="299" selection-start-column="14" selection-end-line="299" selection-end-column="14" />
+            <state relative-caret-position="178">
+              <caret line="22" column="48" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/model.nlp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="93191">
+              <caret line="6893" column="38" lean-forward="true" selection-start-line="6893" selection-start-column="38" selection-end-line="6893" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commands/chat/chatCommands.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/node_modules/@nlpjs/nlp/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@nlpjs/lang-en/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="26" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/node-nlp/src/nlp/nlp-manager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -217,6 +232,8 @@
       <find>UMSING_CHAT_ID</find>
       <find>resize</find>
       <find>consol</find>
+      <find>Till next time</find>
+      <find>agent.acquaintance</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -227,15 +244,19 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/commands/genaralCommands.js" />
         <option value="$PROJECT_DIR$/commands/reminders.js" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/commands/externalApiCommands.js" />
+        <option value="$PROJECT_DIR$/repo/RepoClient.js" />
         <option value="$PROJECT_DIR$/commands/personalCommands.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/repo/repoClient.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/commands/chat/train-nlp.js" />
+        <option value="$PROJECT_DIR$/commands/chat/chatCommands.js" />
       </list>
     </option>
   </component>
@@ -266,8 +287,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="CatdeaLogs" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,20 +299,93 @@
               <item name="teleivan" type="462c0819:PsiDirectoryNode" />
               <item name="commands" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="teleivan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teleivan" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teleivan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teleivan" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teleivan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teleivan" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@nlpjs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teleivan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teleivan" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@nlpjs" type="462c0819:PsiDirectoryNode" />
+              <item name="lang-en" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teleivan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teleivan" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@nlpjs" type="462c0819:PsiDirectoryNode" />
+              <item name="nlp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teleivan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teleivan" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@nlpjs" type="462c0819:PsiDirectoryNode" />
+              <item name="nlp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teleivan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teleivan" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="node-nlp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teleivan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teleivan" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="node-nlp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teleivan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teleivan" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="node-nlp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="nlp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teleivan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teleivan" type="462c0819:PsiDirectoryNode" />
+              <item name="repo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teleivan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teleivan" type="462c0819:PsiDirectoryNode" />
+              <item name="repo" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="CatdeaLogs" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="work&#9;FILE&#9;file:///Users/eoren/git/teleivan/.idea/workspace.xml" />
+    <property name="SearchEverywhereHistoryKey" value="model.nlp&#9;FILE&#9;file:///Users/eoren/git/teleivan/model.nlp&#10;work&#9;FILE&#9;file:///Users/eoren/git/teleivan/.idea/workspace.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1611157423138" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1611311581347" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -302,6 +394,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/repo/db" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -385,7 +485,9 @@
       <workItem from="1610915111669" duration="399000" />
       <workItem from="1610955452206" duration="5403000" />
       <workItem from="1611059803833" duration="576000" />
-      <workItem from="1611206438673" duration="199000" />
+      <workItem from="1611206438673" duration="411000" />
+      <workItem from="1611251084116" duration="2159000" />
+      <workItem from="1611257973289" duration="4168000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1610646448824</created>
@@ -506,11 +608,18 @@
       <option name="project" value="LOCAL" />
       <updated>1611157438450</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added meital">
+      <created>1611206712905</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611206712905</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16089000" />
+    <option name="totallyTimeSpent" value="22628000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -525,7 +634,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48693836" visible="true" weight="0.25274727" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48286605" visible="true" weight="0.25274727" />
       <window_info id="Structure" order="1" sideWeight="0.5046729" side_tool="true" weight="0.24969475" />
       <window_info id="Designer" order="2" />
       <window_info id="Spock ADB" order="3" sideWeight="0.5046729" side_tool="true" weight="0.24969475" />
@@ -533,10 +642,10 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info id="Favorites" order="7" sideWeight="0.5046729" side_tool="true" weight="0.24969475" />
-      <window_info id="npm" order="8" sideWeight="0.51306164" side_tool="true" visible="true" weight="0.25274727" />
+      <window_info id="npm" order="8" sideWeight="0.51713395" side_tool="true" visible="true" weight="0.25274727" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3291536" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291536" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3291536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39916405" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -574,7 +683,8 @@
     <MESSAGE value="chuck norris API" />
     <MESSAGE value="gif added" />
     <MESSAGE value="fixed chuck url" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed chuck url" />
+    <MESSAGE value="added meital" />
+    <option name="LAST_COMMIT_MESSAGE" value="added meital" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.js" />
@@ -596,27 +706,6 @@
     <entry file="file://$PROJECT_DIR$/docs/doc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="44" selection-start-line="11" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commands/reminders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commands/externalApiCommands.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -626,15 +715,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="285">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.npmrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4485">
-          <caret line="299" column="14" selection-start-line="299" selection-start-column="14" selection-end-line="299" selection-end-column="14" />
+        <state relative-caret-position="5010">
+          <caret line="334" column="14" selection-start-line="334" selection-start-column="14" selection-end-line="334" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -653,17 +745,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/repo/db/data.db">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repo/repoClient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repo/db/teleivan.db">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/reminders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/node-nlp/src/nlp/nlp-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@nlpjs/nlp/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@nlpjs/lang-en/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.nlp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93191">
+          <caret line="6893" column="38" lean-forward="true" selection-start-line="6893" selection-start-column="38" selection-end-line="6893" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/chat/train-nlp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/externalApiCommands.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/commands/genaralCommands.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/commands/personalCommands.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+        <state relative-caret-position="30">
+          <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commands/chat/chatCommands.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
         </state>
       </provider>
     </entry>
