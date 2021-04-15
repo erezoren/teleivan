@@ -15,7 +15,7 @@ function bindCommands(bot) {
       else {
         trend = '😭'
       }
-      ctx.telegram.sendMessage(ctx.message.chat.id, `${trend} ${stockData.ask}`)
+      ctx.telegram.sendMessage(ctx.message.chat.id, `${trend} ${stockData.regularMarketPrice}`)
     })
     .catch(error => {
       ctx.telegram.sendMessage(ctx.message.chat.id, 'error ' + error)

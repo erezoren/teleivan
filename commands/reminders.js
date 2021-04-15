@@ -3,7 +3,7 @@ const axios = require('axios');
 require('dotenv').config();
 
 function bindCommands(bot) {
-  cron.schedule('0 30 9 * * SUN,TUE,THU', async () => {
+  cron.schedule('0 45 10 * * SUN,TUE,THU', async () => {
     bot.telegram.sendMessage(getChatId(),
         'יששששש!!!! עוד מעט דיילי!!! 😛')
 
@@ -12,7 +12,7 @@ function bindCommands(bot) {
     timezone: "Asia/Jerusalem"
   });
 
-  cron.schedule('0 30 10 * * MON,WED', async () => {
+  cron.schedule('0 45 11 * * MON,WED', async () => {
     bot.telegram.sendMessage(getChatId(),
         'יששששש!!!! עוד מעט דיילי!!! 😛')
 
@@ -33,6 +33,7 @@ function bindCommands(bot) {
         if (isSameDay(new Date(itemDate), new Date())) {
           const message = `היום ${item.hebrew}`
           bot.telegram.sendMessage(getChatId(), message)
+          bot.telegram.sendMessage(getChatId(), item.memo);
         }
       })
     })
@@ -50,16 +51,13 @@ function bindCommands(bot) {
 function getChatId() {
   if (process.env.NODE_ENV === 'production') {
     return process.env.UMSING_CHAT_ID;
-  }
-  else {
+  } else {
     return process.env.TEST_CHAT_ID;
   }
 
 }
 
 function isSameDay(d1, d2) {
-  console.log(d1.toString())
-  console.log(d2.toString())
   return d1.getFullYear() === d2.getFullYear() &&
       d1.getMonth() === d2.getMonth() &&
       d1.getDate() === d2.getDate();

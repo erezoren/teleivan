@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "description": "The Telegram version of Ivan",
   "engines": {
-    "node": "14.x"
+    "node": "15.x"
   },
   "main": "index.js",
   "scripts": {
