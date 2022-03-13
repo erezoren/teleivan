@@ -3,7 +3,7 @@ const axios = require('axios');
 require('dotenv').config();
 
 function bindCommands(bot) {
-  cron.schedule('0 45 8 * * SUN,TUE,THU', async () => {
+/*  cron.schedule('0 45 8 * * SUN,TUE,THU', async () => {
     bot.telegram.sendMessage(getChatId(),
         'יששששש!!!! עוד מעט דיילי!!! 😛')
 
@@ -19,7 +19,7 @@ function bindCommands(bot) {
   }, {
     scheduled: true,
     timezone: "Asia/Jerusalem"
-  });
+  });*/
 
   cron.schedule('0 0 8 * * *', async () => {
     const month = new Date().getMonth() + 1
