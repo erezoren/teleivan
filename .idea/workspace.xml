@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f348d44a-7c02-4606-bdfc-2b5aea6c44ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/reminders.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/reminders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/personalCommands.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/personalCommands.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -220,15 +228,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -307,7 +313,9 @@
       <workItem from="1618473200661" duration="4014000" />
       <workItem from="1618901000497" duration="227000" />
       <workItem from="1646817349745" duration="607000" />
-      <workItem from="1647158519566" duration="197000" />
+      <workItem from="1647158519566" duration="399000" />
+      <workItem from="1647190861653" duration="537000" />
+      <workItem from="1651498616126" duration="5578000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1610646448824</created>
@@ -463,7 +471,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646817536540</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="commented scheduled daily notification to reduce call per day and avoid exceeding limit">
+      <created>1647173127976</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1647173127976</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added urban dictionary api">
+      <created>1651506653756</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1651506653756</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -531,14 +553,15 @@
     <MESSAGE value="added meital" />
     <MESSAGE value="fixes" />
     <MESSAGE value="commented scheduled daily notification to reduce call per day and avoid exceeding limit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commented scheduled daily notification to reduce call per day and avoid exceeding limit" />
+    <MESSAGE value="added urban dictionary api" />
+    <option name="LAST_COMMIT_MESSAGE" value="added urban dictionary api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/commands/reminders.js</url>
-          <line>60</line>
+          <line>59</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -548,22 +571,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/commands/reminders.js</url>
-          <line>29</line>
+          <line>28</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/commands/externalApiCommands.js</url>
-          <line>7</line>
+          <line>9</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/commands/externalApiCommands.js</url>
-          <line>9</line>
+          <line>11</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/commands/externalApiCommands.js</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

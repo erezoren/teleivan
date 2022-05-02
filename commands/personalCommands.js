@@ -10,6 +10,7 @@ function bindCommands(bot) {
     ctx.reply('Strange....I was just thinking of noam 😻😻😻')
   });
 
+
   const yanRegexEng = new RegExp(/*yan*/)
   bot.hears(yanRegexEng, (ctx) => {
     ctx.reply('Yan blatt!!! 🐂 🐗 🐼')
