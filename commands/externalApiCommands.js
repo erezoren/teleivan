@@ -1,4 +1,6 @@
 const axios = require('axios');
+const ud = require('urban-dictionary')
+
 require('dotenv').config();
 
 function bindCommands(bot) {
@@ -11,11 +13,11 @@ function bindCommands(bot) {
       let trend;
       if (stockData.regularMarketChangePercent >= 0) {
         trend = '😜'
-      }
-      else {
+      } else {
         trend = '😭'
       }
-      ctx.telegram.sendMessage(ctx.message.chat.id, `${trend} ${stockData.regularMarketPrice}`)
+      ctx.telegram.sendMessage(ctx.message.chat.id,
+          `${trend} ${stockData.regularMarketPrice}`)
     })
     .catch(error => {
       ctx.telegram.sendMessage(ctx.message.chat.id, 'error ' + error)
@@ -33,9 +35,30 @@ function bindCommands(bot) {
       ctx.telegram.sendMessage(ctx.message.chat.id, 'error ' + error)
     });
   })
+  bot.command('urban', (ctx) => {
+    let search_term = extractParams(ctx, 'urban')
+    if (search_term.trim() == "/urban") {
+      axios
+      .get(`${process.env.URBAN_RANDOM_URL}`)
+      .then(response => {
+        ctx.telegram.sendMessage(ctx.message.chat.id,
+            response.data.list[0].definition)
+      })
+      .catch(error => {
+        ctx.telegram.sendMessage(ctx.message.chat.id, `error ${error}`)
+      })
+    } else {
+      ud.define(search_term).then((results) => {
+        ctx.telegram.sendMessage(ctx.message.chat.id, results[0].definition)
+      }).catch((error) => {
+        ctx.telegram.sendMessage(ctx.message.chat.id, `error ${error.message}`)
+      })
+    }
+
+  })
 
   bot.command('gif', (ctx) => {
-    const query = encodeURI(ctx.message.text.replace('/gif ', ''))
+    const query = extractParams(ctx, 'gif');
     axios
     .get(`${process.env.GIPHY_BASE_URL}${query}`)
     .then(response => {
@@ -48,6 +71,10 @@ function bindCommands(bot) {
       ctx.telegram.sendMessage(ctx.message.chat.id, 'error ' + error)
     });
   })
+}
+
+const extractParams = (ctx, commandName) => {
+  return encodeURI(ctx.message.text.replace(`/${commandName} `, ''))
 }
 
 module.exports = {

@@ -21,10 +21,9 @@ function bindCommands(bot) {
     timezone: "Asia/Jerusalem"
   });*/
 
-  cron.schedule('0 0 8 * * *', async () => {
+  cron.schedule('0 0 8 * * SUN,MON,TUE,WED,THU', async () => {
     const month = new Date().getMonth() + 1
     const apiUrl = process.env.HEB_CAL_URL + month.toString();
-    console.log(apiUrl)
     axios.get(apiUrl)
     .then(response => {
       const calData = response.data;
