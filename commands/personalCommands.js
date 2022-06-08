@@ -5,13 +5,13 @@ function bindCommands(bot) {
     ctx.reply('בדיוק גם אני חשבתי על נעם....איזה קטע! 😻😻😻')
   });
 
-  const noamRegexEng = new RegExp(/*noam*/)
+  const noamRegexEng = new RegExp(/\bnoam\b/)
   bot.hears(noamRegexEng, (ctx) => {
     ctx.reply('Strange....I was just thinking of noam 😻😻😻')
   });
 
 
-  const yanRegexEng = new RegExp(/*yan*/)
+  const yanRegexEng = new RegExp(/\byan\b/)
   bot.hears(yanRegexEng, (ctx) => {
     ctx.reply('Yan blatt!!! 🐂 🐗 🐼')
   });

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f348d44a-7c02-4606-bdfc-2b5aea6c44ac" name="Default Changelist" comment="">
+    <list default="true" id="f348d44a-7c02-4606-bdfc-2b5aea6c44ac" name="Default Changelist" comment="added urban dictionary api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/personalCommands.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/personalCommands.js" afterDir="false" />
     </list>
@@ -206,6 +206,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="two.files.diff.last.used.folder" value="$USER_HOME$/teleivan" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -315,7 +316,9 @@
       <workItem from="1646817349745" duration="607000" />
       <workItem from="1647158519566" duration="399000" />
       <workItem from="1647190861653" duration="537000" />
-      <workItem from="1651498616126" duration="5578000" />
+      <workItem from="1651498616126" duration="8027000" />
+      <workItem from="1651576788575" duration="770000" />
+      <workItem from="1654686979922" duration="1633000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1610646448824</created>
@@ -485,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651506653756</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="added urban dictionary api">
+      <created>1651507035309</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1651507035309</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -563,31 +573,6 @@
           <url>file://$PROJECT_DIR$/commands/reminders.js</url>
           <line>59</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/commands/reminders.js</url>
-          <line>24</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/commands/reminders.js</url>
-          <line>28</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/commands/externalApiCommands.js</url>
-          <line>9</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/commands/externalApiCommands.js</url>
-          <line>11</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/commands/externalApiCommands.js</url>
-          <line>18</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
