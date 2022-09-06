@@ -63,6 +63,9 @@ app.post('/' + bot.token, (req, res) => {
 cron.schedule('* * * * *',  () => {
   console.log('Refreshing application');
   axios.get(`localhost:${process.env.PORT}`)
+  .catch(ex=>{
+    console.log(ex.toString())
+  })
 });
 
 /*bot.on('ssss', (ctx) => {
