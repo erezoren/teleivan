@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f348d44a-7c02-4606-bdfc-2b5aea6c44ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,7 +321,7 @@
       <workItem from="1651498616126" duration="8027000" />
       <workItem from="1651576788575" duration="770000" />
       <workItem from="1654686979922" duration="2023000" />
-      <workItem from="1662457188238" duration="897000" />
+      <workItem from="1662457188238" duration="1865000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1610646448824</created>
@@ -505,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654689538013</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="removed engine limitation&#10;added yarn.lcok">
+      <created>1662460224020</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1662460224020</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -575,7 +582,8 @@
     <MESSAGE value="commented scheduled daily notification to reduce call per day and avoid exceeding limit" />
     <MESSAGE value="added urban dictionary api" />
     <MESSAGE value="refactored regexes" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored regexes" />
+    <MESSAGE value="removed engine limitation&#10;added yarn.lcok" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed engine limitation&#10;added yarn.lcok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

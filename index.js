@@ -11,7 +11,7 @@ const chat = require('./commands/chat/chatCommands')
 let bot
 if (process.env.NODE_ENV === 'production') {
   bot = new Telegraf(process.env.BOT_TOKEN);
-  bot.startWebhook(process.env.HEROKU_URL + bot.token);
+ // bot.startWebhook(process.env.HEROKU_URL + bot.token);
 } else {
   bot = new Telegraf(process.env.TEST_BOT_TOKEN);
 }
