@@ -2,9 +2,6 @@
   "name": "teleivan",
   "version": "0.3.0",
   "description": "The Telegram version of Ivan",
-  "engines": {
-    "node": "15.x"
-  },
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",

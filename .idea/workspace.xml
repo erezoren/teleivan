@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f348d44a-7c02-4606-bdfc-2b5aea6c44ac" name="Default Changelist" comment="added urban dictionary api">
+    <list default="true" id="f348d44a-7c02-4606-bdfc-2b5aea6c44ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/personalCommands.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/personalCommands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,13 +229,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -318,7 +320,8 @@
       <workItem from="1647190861653" duration="537000" />
       <workItem from="1651498616126" duration="8027000" />
       <workItem from="1651576788575" duration="770000" />
-      <workItem from="1654686979922" duration="1633000" />
+      <workItem from="1654686979922" duration="2023000" />
+      <workItem from="1662457188238" duration="897000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1610646448824</created>
@@ -495,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651507035309</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="refactored regexes">
+      <created>1654689538013</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1654689538013</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -564,7 +574,8 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="commented scheduled daily notification to reduce call per day and avoid exceeding limit" />
     <MESSAGE value="added urban dictionary api" />
-    <option name="LAST_COMMIT_MESSAGE" value="added urban dictionary api" />
+    <MESSAGE value="refactored regexes" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored regexes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
