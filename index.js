@@ -60,9 +60,9 @@ app.post('/' + bot.token, (req, res) => {
   res.sendStatus(200);
 });
 
-cron.schedule('* * * * *', async () => {
+cron.schedule('* * * * *',  () => {
   console.log('Refreshing application');
-  axios.get(`localhost:8080`)
+  axios.get(`localhost:${process.env.PORT}`)
 });
 
 /*bot.on('ssss', (ctx) => {
