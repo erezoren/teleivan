@@ -62,7 +62,7 @@ app.post('/' + bot.token, (req, res) => {
 
 cron.schedule('* * * * *', async () => {
   console.log('Refreshing application');
-  axios.get(`https://teleivan.onrender.com/`)
+  axios.get(`localhost:8080`)
 });
 
 /*bot.on('ssss', (ctx) => {
