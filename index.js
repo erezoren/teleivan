@@ -7,13 +7,16 @@ const personalCommands = require('./commands/personalCommands')
 const externalApiCommands = require('./commands/externalApiCommands')
 const reminders = require('./commands/reminders')
 const chat = require('./commands/chat/chatCommands')
+let port = normalizePort(process.env.PORT || '8080');
 
 let bot
+let protocol = "https"
 if (process.env.NODE_ENV === 'production') {
   bot = new Telegraf(process.env.BOT_TOKEN);
  // bot.startWebhook(process.env.HEROKU_URL + bot.token);
 } else {
   bot = new Telegraf(process.env.TEST_BOT_TOKEN);
+  protocol = "http"
 }
 
 bot.use(async (ctx, next) => {
@@ -54,15 +57,21 @@ const express = require('express')
 const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
-app.listen(process.env.PORT);
+app.listen(port);
 app.post('/' + bot.token, (req, res) => {
   bot.processUpdate(req.body);
   res.sendStatus(200);
 });
 
+app.get('/ack', (req, res) => {
+  res.send("ALIVE!!!");
+});
 cron.schedule('* * * * *',  () => {
   console.log('Refreshing application');
-  axios.get(`localhost:${process.env.PORT}`)
+  axios.get(`${protocol}://localhost:${port}/ack`)
+  .then(res=>{
+    console.log(res.data)
+  })
   .catch(ex=>{
     console.log(ex.toString())
   })
@@ -72,3 +81,20 @@ cron.schedule('* * * * *',  () => {
   ctx.telegram.sendMessage(ctx.message.chat.id,
       `Hello ${ctx.update.message.from.first_name}`)
 })*/
+
+
+function normalizePort(val) {
+  let port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
