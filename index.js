@@ -10,13 +10,11 @@ const chat = require('./commands/chat/chatCommands')
 let port = normalizePort(process.env.PORT || '8080');
 
 let bot
-let protocol = "https"
 if (process.env.NODE_ENV === 'production') {
   bot = new Telegraf(process.env.BOT_TOKEN);
  // bot.startWebhook(process.env.HEROKU_URL + bot.token);
 } else {
   bot = new Telegraf(process.env.TEST_BOT_TOKEN);
-  protocol = "http"
 }
 
 bot.use(async (ctx, next) => {
@@ -68,7 +66,7 @@ app.get('/ack', (req, res) => {
 });
 cron.schedule('* * * * *',  () => {
   console.log('Refreshing application');
-  axios.get(`${protocol}://localhost:${port}/ack`)
+  axios.get(`http://localhost:${port}/ack`)
   .then(res=>{
     console.log(res.data)
   })
