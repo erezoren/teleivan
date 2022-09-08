@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f348d44a-7c02-4606-bdfc-2b5aea6c44ac" name="Default Changelist" comment="">
+    <list default="true" id="f348d44a-7c02-4606-bdfc-2b5aea6c44ac" name="Default Changelist" comment="changed refresh url">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/personalCommands.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/personalCommands.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,15 +229,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -323,7 +321,8 @@
       <workItem from="1654686979922" duration="2023000" />
       <workItem from="1662457188238" duration="2637000" />
       <workItem from="1662465630563" duration="630000" />
-      <workItem from="1662469045457" duration="808000" />
+      <workItem from="1662469045457" duration="3548000" />
+      <workItem from="1662622573807" duration="1623000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1610646448824</created>
@@ -549,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662471522293</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="changed refresh url">
+      <created>1662472320820</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1662472320820</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
