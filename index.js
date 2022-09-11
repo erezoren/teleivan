@@ -64,7 +64,7 @@ app.post('/' + bot.token, (req, res) => {
 app.get('/ack', (req, res) => {
   res.send("ALIVE!!!");
 });
-/*cron.schedule('* * * * *',  () => {
+cron.schedule('* * * * *',  () => {
   console.log('Refreshing application');
   axios.get(`http://localhost:${port}/ack`)
   .then(res=>{
@@ -73,7 +73,7 @@ app.get('/ack', (req, res) => {
   .catch(ex=>{
     console.log(ex.toString())
   })
-});*/
+});
 
 /*bot.on('ssss', (ctx) => {
   ctx.telegram.sendMessage(ctx.message.chat.id,
